@@ -11,6 +11,7 @@ algorithmsDict = {
     'cocktailSort'        : cocktailSort,
     'cycleSort'           : cycleSort,
     'bogoSort'            : bogoSort,
+    'slowSort'            : slowSort,
     'heapSort'            : heapSort,
     'radixSort'           : radixSort,
     'shellSort'           : shellSort,
@@ -23,7 +24,7 @@ algorithmsDict = {
     'timSort'             : timSort,
     'stoogeSort'          : stoogeSort,
     'strandSort'          : strandSort,
-    'oddEvenSort'        : oddevenSort,
+    'oddEvenSort'         : oddevenSort,
     'pigeonholeSort'      : pigeonholeSort,
     'exchangeSort'        : exchangeSort,
     'treeSort'            : treeSort
