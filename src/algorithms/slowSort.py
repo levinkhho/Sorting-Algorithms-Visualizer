@@ -12,9 +12,9 @@ def slowSort(array, left, right):
     it not as a divide and conquer algorithm, but as a "multiply and
     surrender" algorithm.
     
-    Unlike Bogo Sort, Slow Sort is "non-decreasing",
-    in that every step either gets you closer to a sorted list, or (more
-    often) does nothing.
+    Unlike Bogo Sort, Slow Sort is "non-decreasing", in that every step
+    technically gets you closer to a sorted list (or, more often, does
+    nothing).
 
     Time complexity: not yet proven. A lower bound on Slow Sort is
     \Omega(n^{\log_2(n)/(2+\epsilon)}) for any \epsilon>0, according to
