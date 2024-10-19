@@ -71,7 +71,7 @@ def main():
             window.update(event)
 
         # Get delay in seconds
-        delay = window.get_widget_value('delay_slider') / 10
+        delay = window.get_widget_value('delay_slider') / 4
 
         isPlaying = window.get_widget_value('play_button')
         if isPlaying and not isSorting:
