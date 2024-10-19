@@ -1,25 +1,24 @@
 def slowSort(array, left, right):
     """
-    Slow Sort is a divide and conquer algorithm like Merge Sort.
+    Slow Sort is a divide-and-conquer algorithm like Merge Sort.
     Like Merge Sort, it starts by dividing the input list in half and
     recursively sorting each half. Unlike Merge Sort, which then merges
     the two halves in an efficient way, Slow Sort does so in a very
-    inefficient way: it selects the maximum of the two largest elements
-    from each half, places it at the end of the list, and then recursively
-    calls itself on the remaining list.
+    inefficient way: it compares the largest elements of either half,
+    picks the larger of the two, and places it at the end of the list. It
+    then recursively calls itself on the remaining list.
 
     The creators of Slow Sort, Andrei Broder and Jorge Stolfi, classified
-    it not as a divide and conquer algorithm, but as a "multiply and
-    surrender" algorithm.
+    it not as a divide-and-conquer algorithm, but humorously as a
+    "multiply-and-surrender" algorithm.
     
-    Unlike Bogo Sort, Slow Sort is "non-decreasing", in that every step
-    technically gets you closer to a sorted list (or, more often, does
-    nothing).
+    Unlike Bogo Sort, SlowSort is "non-decreasing," meaning that every
+    step either brings the list closer to being sorted or leaves it
+    unchanged.
 
-    Time complexity: not yet proven. A lower bound on Slow Sort is
-    \Omega(n^{\log_2(n)/(2+\epsilon)}) for any \epsilon>0, according to
-    Broder and Stolfi in their book Pessimal Algorithms and Simplexity
-    Analysis.
+    Time complexity: not yet proven. Broder and Stolfi claim, in their
+    book Pessimal Algorithms and Simplexity Analysis, to have found a
+    lower bound of \Omega(n^{\log_2(n)/(2+\epsilon)}) for any \epsilon>0.
     """
     if left >= right:
         return
