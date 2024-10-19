@@ -31,7 +31,7 @@ def slowSort(array, left, right):
     yield from slowSort(array, mid + 1, right)  # Recursively sort the second half
 
     # Display comparison of largest of two halves
-    yield array, mid, right, left, -1
+    yield array, mid, -1, left, right
 
     # If the max. of the first half is greater than the max. of the second, swap them
     if array[right] < array[mid]:
