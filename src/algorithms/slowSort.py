@@ -23,7 +23,7 @@ def slowSort(array, left, right):
     if left >= right:
         return
 
-    # Display current search field
+    # Display current sorting window
     yield array, -1, -1, left, right
 
     mid = (left + right) // 2
