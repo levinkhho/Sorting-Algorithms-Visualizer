@@ -15,6 +15,7 @@ from algorithms.strandSort import strandSort
 from algorithms.stoogeSort import stoogeSort
 from algorithms.shellSort import shellSort
 from algorithms.selectionSort import selectionSort
+from algorithms.slowSort import slowSort
 from algorithms.quickSort import quickSort
 from algorithms.pigeonholeSort import pigeonholeSort
 from algorithms.pancakeSort import pancakeSort
@@ -42,6 +43,7 @@ __all__ = [
     "stoogeSort",
     "shellSort",
     "selectionSort",
+    "slowSort",
     "quickSort",
     "pigeonholeSort",
     "pancakeSort",
